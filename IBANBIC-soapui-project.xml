@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8b39c0a0-a5ac-423f-8e39-c4094286970c" activeEnvironment="Default" name="IBANBIC" resourceRoot="" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="160d81e1-2173-43bc-ab57-ddb0a02d4d38" wsaVersion="NONE" name="IBANBICSoap12" type="wsdl" bindingName="{http://tempuri.org/}IBANBICSoap12" soapVersion="1_2" anonymous="optional" definition="https://www.ibanbic.be/IBANBIC.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint></con:endpoints><con:operation id="8c1cbf3f-46e4-49ad-8b18-5fcbe3003196" isOneWay="false" action="http://tempuri.org/About" name="About" bindingOperationName="About" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="6b273925-39d8-459a-94c6-37798bcaa896" isOneWay="false" action="http://tempuri.org/BBANtoBANKNAME" name="BBANtoBANKNAME" bindingOperationName="BBANtoBANKNAME" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="c98b07c0-fb44-4fa3-8e5c-d3c3d54526fb" isOneWay="false" action="http://tempuri.org/BBANtoBIC" name="BBANtoBIC" bindingOperationName="BBANtoBIC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="08e7aeba-a5c6-412f-9963-f898fe863f36" isOneWay="false" action="http://tempuri.org/BBANtoIBAN" name="BBANtoIBAN" bindingOperationName="BBANtoIBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="bff81765-4168-470d-9c21-86b5daa480f5" isOneWay="false" action="http://tempuri.org/BBANtoIBANandBIC" name="BBANtoIBANandBIC" bindingOperationName="BBANtoIBANandBIC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="8f629770-a447-4267-b069-4410bc98d401" isOneWay="false" action="http://tempuri.org/calculateIBAN1" name="calculateIBAN1" bindingOperationName="calculateIBAN1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="eccc4b19-76bb-4090-9d96-a1d9c0691010" isOneWay="false" action="http://tempuri.org/calculateIBAN2" name="calculateIBAN2" bindingOperationName="calculateIBAN2" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="164109e0-30bb-4159-8858-cdd9840c8c06" isOneWay="false" action="http://tempuri.org/CheckBBAN" name="CheckBBAN" bindingOperationName="CheckBBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="c1ba744e-e959-4448-afee-5423ead0b578" isOneWay="false" action="http://tempuri.org/controleIBAN" name="controleIBAN" bindingOperationName="controleIBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="d05867e7-1a7e-4034-b92c-f66e08eb1529" isOneWay="false" action="http://tempuri.org/controleIBANerror" name="controleIBANerror" bindingOperationName="controleIBANerror" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="9003ffb9-d9e2-46d3-a7c0-02c1cdd4ad22" isOneWay="false" action="http://tempuri.org/getBelgianBBAN" name="getBelgianBBAN" bindingOperationName="getBelgianBBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="d4c7a837-2396-47d2-81bb-955e6774eeb4" isOneWay="false" action="http://tempuri.org/getCountryList" name="getCountryList" bindingOperationName="getCountryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="f3f36078-0013-405e-97ea-cb7fdf82bd5a" isOneWay="false" action="http://tempuri.org/querySwiftBICcode" name="querySwiftBICcode" bindingOperationName="querySwiftBICcode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="fea4f2d3-ce7d-44ca-989a-27da233ec04a" isOneWay="false" action="http://tempuri.org/querySwiftBICcode1" name="querySwiftBICcode1" bindingOperationName="querySwiftBICcode1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="e31a60a2-8524-4fbe-a74c-1dccedc5b230" isOneWay="false" action="http://tempuri.org/querySwiftBICcodeGetCountryList" name="querySwiftBICcodeGetCountryList" bindingOperationName="querySwiftBICcodeGetCountryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="c7782e3d-bf20-48fd-b468-6c649b41817a" isOneWay="false" action="http://tempuri.org/Version" name="Version" bindingOperationName="Version" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="fd77e498-4ad1-499a-bb62-004cbd52bea7" wsaVersion="NONE" name="IBANBICSoap" type="wsdl" bindingName="{http://tempuri.org/}IBANBICSoap" soapVersion="1_1" anonymous="optional" definition="https://www.ibanbic.be/IBANBIC.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://www.ibanbic.be/IBANBIC.asmx?WSDL"><con:part><con:url>https://www.ibanbic.be/IBANBIC.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="About">
+        <s:complexType/>
+      </s:element>
+      <s:element name="AboutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AboutResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Version">
+        <s:complexType/>
+      </s:element>
+      <s:element name="VersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBelgianBBAN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getBelgianBBANResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getBelgianBBANResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoIBANandBIC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoIBANandBICResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BBANtoIBANandBICResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoIBAN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoIBANResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BBANtoIBANResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoBIC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoBICResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BBANtoBICResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoBANKNAME">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BBANtoBANKNAMEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BBANtoBANKNAMEResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBBAN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckBBANResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckBBANResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCountryList">
+        <s:complexType/>
+      </s:element>
+      <s:element name="getCountryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCountryListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax"/>
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax"/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateIBAN1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ISOcountry" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateIBAN1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="calculateIBAN1Result" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateIBAN2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ISOcountry" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="banknumber" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="account" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="calculateIBAN2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="calculateIBAN2Result" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="controleIBAN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iban" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="controleIBANResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="controleIBANResult" type="s:boolean"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="controleIBANerror">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iban" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="controleIBANerrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="controleIBANerrorResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="querySwiftBICcode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Institution" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="querySwiftBICcodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="querySwiftBICcodeResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="querySwiftBICcode1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Institution" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="querySwiftBICcode1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="querySwiftBICcode1Result" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="querySwiftBICcodeGetCountryList">
+        <s:complexType/>
+      </s:element>
+      <s:element name="querySwiftBICcodeGetCountryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="querySwiftBICcodeGetCountryListResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string"/>
+      <s:element name="boolean" type="s:boolean"/>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax"/>
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AboutSoapIn">
+    <wsdl:part name="parameters" element="tns:About"/>
+  </wsdl:message>
+  <wsdl:message name="AboutSoapOut">
+    <wsdl:part name="parameters" element="tns:AboutResponse"/>
+  </wsdl:message>
+  <wsdl:message name="VersionSoapIn">
+    <wsdl:part name="parameters" element="tns:Version"/>
+  </wsdl:message>
+  <wsdl:message name="VersionSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANSoapIn">
+    <wsdl:part name="parameters" element="tns:getBelgianBBAN"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANSoapOut">
+    <wsdl:part name="parameters" element="tns:getBelgianBBANResponse"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICSoapIn">
+    <wsdl:part name="parameters" element="tns:BBANtoIBANandBIC"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICSoapOut">
+    <wsdl:part name="parameters" element="tns:BBANtoIBANandBICResponse"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANSoapIn">
+    <wsdl:part name="parameters" element="tns:BBANtoIBAN"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANSoapOut">
+    <wsdl:part name="parameters" element="tns:BBANtoIBANResponse"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICSoapIn">
+    <wsdl:part name="parameters" element="tns:BBANtoBIC"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICSoapOut">
+    <wsdl:part name="parameters" element="tns:BBANtoBICResponse"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMESoapIn">
+    <wsdl:part name="parameters" element="tns:BBANtoBANKNAME"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMESoapOut">
+    <wsdl:part name="parameters" element="tns:BBANtoBANKNAMEResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckBBAN"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckBBANResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getCountryListSoapIn">
+    <wsdl:part name="parameters" element="tns:getCountryList"/>
+  </wsdl:message>
+  <wsdl:message name="getCountryListSoapOut">
+    <wsdl:part name="parameters" element="tns:getCountryListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1SoapIn">
+    <wsdl:part name="parameters" element="tns:calculateIBAN1"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1SoapOut">
+    <wsdl:part name="parameters" element="tns:calculateIBAN1Response"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2SoapIn">
+    <wsdl:part name="parameters" element="tns:calculateIBAN2"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2SoapOut">
+    <wsdl:part name="parameters" element="tns:calculateIBAN2Response"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANSoapIn">
+    <wsdl:part name="parameters" element="tns:controleIBAN"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANSoapOut">
+    <wsdl:part name="parameters" element="tns:controleIBANResponse"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorSoapIn">
+    <wsdl:part name="parameters" element="tns:controleIBANerror"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorSoapOut">
+    <wsdl:part name="parameters" element="tns:controleIBANerrorResponse"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeSoapIn">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcode"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeSoapOut">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcodeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1SoapIn">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcode1"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1SoapOut">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcode1Response"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeGetCountryListSoapIn">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcodeGetCountryList"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeGetCountryListSoapOut">
+    <wsdl:part name="parameters" element="tns:querySwiftBICcodeGetCountryListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AboutHttpGetIn"/>
+  <wsdl:message name="AboutHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="VersionHttpGetIn"/>
+  <wsdl:message name="VersionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMEHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMEHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANHttpGetIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="getCountryListHttpGetIn"/>
+  <wsdl:message name="getCountryListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1HttpGetIn">
+    <wsdl:part name="ISOcountry" type="s:string"/>
+    <wsdl:part name="account" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1HttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2HttpGetIn">
+    <wsdl:part name="ISOcountry" type="s:string"/>
+    <wsdl:part name="banknumber" type="s:string"/>
+    <wsdl:part name="account" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2HttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANHttpGetIn">
+    <wsdl:part name="iban" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorHttpGetIn">
+    <wsdl:part name="iban" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeHttpGetIn">
+    <wsdl:part name="Institution" type="s:string"/>
+    <wsdl:part name="City" type="s:string"/>
+    <wsdl:part name="Country" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1HttpGetIn">
+    <wsdl:part name="Institution" type="s:string"/>
+    <wsdl:part name="Country" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1HttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeGetCountryListHttpGetIn"/>
+  <wsdl:message name="querySwiftBICcodeGetCountryListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="AboutHttpPostIn"/>
+  <wsdl:message name="AboutHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="VersionHttpPostIn"/>
+  <wsdl:message name="VersionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="getBelgianBBANHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANandBICHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoIBANHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBICHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMEHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="BBANtoBANKNAMEHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANHttpPostIn">
+    <wsdl:part name="Value" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="CheckBBANHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="getCountryListHttpPostIn"/>
+  <wsdl:message name="getCountryListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1HttpPostIn">
+    <wsdl:part name="ISOcountry" type="s:string"/>
+    <wsdl:part name="account" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN1HttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2HttpPostIn">
+    <wsdl:part name="ISOcountry" type="s:string"/>
+    <wsdl:part name="banknumber" type="s:string"/>
+    <wsdl:part name="account" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="calculateIBAN2HttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANHttpPostIn">
+    <wsdl:part name="iban" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorHttpPostIn">
+    <wsdl:part name="iban" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="controleIBANerrorHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeHttpPostIn">
+    <wsdl:part name="Institution" type="s:string"/>
+    <wsdl:part name="City" type="s:string"/>
+    <wsdl:part name="Country" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1HttpPostIn">
+    <wsdl:part name="Institution" type="s:string"/>
+    <wsdl:part name="Country" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcode1HttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="querySwiftBICcodeGetCountryListHttpPostIn"/>
+  <wsdl:message name="querySwiftBICcodeGetCountryListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:portType name="IBANBICSoap">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutSoapIn"/>
+      <wsdl:output message="tns:AboutSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionSoapIn"/>
+      <wsdl:output message="tns:VersionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <wsdl:input message="tns:getBelgianBBANSoapIn"/>
+      <wsdl:output message="tns:getBelgianBBANSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <wsdl:input message="tns:BBANtoIBANandBICSoapIn"/>
+      <wsdl:output message="tns:BBANtoIBANandBICSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <wsdl:input message="tns:BBANtoIBANSoapIn"/>
+      <wsdl:output message="tns:BBANtoIBANSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <wsdl:input message="tns:BBANtoBICSoapIn"/>
+      <wsdl:output message="tns:BBANtoBICSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <wsdl:input message="tns:BBANtoBANKNAMESoapIn"/>
+      <wsdl:output message="tns:BBANtoBANKNAMESoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <wsdl:input message="tns:CheckBBANSoapIn"/>
+      <wsdl:output message="tns:CheckBBANSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <wsdl:input message="tns:getCountryListSoapIn"/>
+      <wsdl:output message="tns:getCountryListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <wsdl:input message="tns:calculateIBAN1SoapIn"/>
+      <wsdl:output message="tns:calculateIBAN1SoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <wsdl:input message="tns:calculateIBAN2SoapIn"/>
+      <wsdl:output message="tns:calculateIBAN2SoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <wsdl:input message="tns:controleIBANSoapIn"/>
+      <wsdl:output message="tns:controleIBANSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <wsdl:input message="tns:controleIBANerrorSoapIn"/>
+      <wsdl:output message="tns:controleIBANerrorSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <wsdl:input message="tns:querySwiftBICcodeSoapIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <wsdl:input message="tns:querySwiftBICcode1SoapIn"/>
+      <wsdl:output message="tns:querySwiftBICcode1SoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <wsdl:input message="tns:querySwiftBICcodeGetCountryListSoapIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeGetCountryListSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IBANBICHttpGet">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutHttpGetIn"/>
+      <wsdl:output message="tns:AboutHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionHttpGetIn"/>
+      <wsdl:output message="tns:VersionHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <wsdl:input message="tns:getBelgianBBANHttpGetIn"/>
+      <wsdl:output message="tns:getBelgianBBANHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <wsdl:input message="tns:BBANtoIBANandBICHttpGetIn"/>
+      <wsdl:output message="tns:BBANtoIBANandBICHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <wsdl:input message="tns:BBANtoIBANHttpGetIn"/>
+      <wsdl:output message="tns:BBANtoIBANHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <wsdl:input message="tns:BBANtoBICHttpGetIn"/>
+      <wsdl:output message="tns:BBANtoBICHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <wsdl:input message="tns:BBANtoBANKNAMEHttpGetIn"/>
+      <wsdl:output message="tns:BBANtoBANKNAMEHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <wsdl:input message="tns:CheckBBANHttpGetIn"/>
+      <wsdl:output message="tns:CheckBBANHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <wsdl:input message="tns:getCountryListHttpGetIn"/>
+      <wsdl:output message="tns:getCountryListHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <wsdl:input message="tns:calculateIBAN1HttpGetIn"/>
+      <wsdl:output message="tns:calculateIBAN1HttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <wsdl:input message="tns:calculateIBAN2HttpGetIn"/>
+      <wsdl:output message="tns:calculateIBAN2HttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <wsdl:input message="tns:controleIBANHttpGetIn"/>
+      <wsdl:output message="tns:controleIBANHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <wsdl:input message="tns:controleIBANerrorHttpGetIn"/>
+      <wsdl:output message="tns:controleIBANerrorHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <wsdl:input message="tns:querySwiftBICcodeHttpGetIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <wsdl:input message="tns:querySwiftBICcode1HttpGetIn"/>
+      <wsdl:output message="tns:querySwiftBICcode1HttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <wsdl:input message="tns:querySwiftBICcodeGetCountryListHttpGetIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeGetCountryListHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IBANBICHttpPost">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutHttpPostIn"/>
+      <wsdl:output message="tns:AboutHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionHttpPostIn"/>
+      <wsdl:output message="tns:VersionHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <wsdl:input message="tns:getBelgianBBANHttpPostIn"/>
+      <wsdl:output message="tns:getBelgianBBANHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <wsdl:input message="tns:BBANtoIBANandBICHttpPostIn"/>
+      <wsdl:output message="tns:BBANtoIBANandBICHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <wsdl:input message="tns:BBANtoIBANHttpPostIn"/>
+      <wsdl:output message="tns:BBANtoIBANHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <wsdl:input message="tns:BBANtoBICHttpPostIn"/>
+      <wsdl:output message="tns:BBANtoBICHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <wsdl:input message="tns:BBANtoBANKNAMEHttpPostIn"/>
+      <wsdl:output message="tns:BBANtoBANKNAMEHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <wsdl:input message="tns:CheckBBANHttpPostIn"/>
+      <wsdl:output message="tns:CheckBBANHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <wsdl:input message="tns:getCountryListHttpPostIn"/>
+      <wsdl:output message="tns:getCountryListHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <wsdl:input message="tns:calculateIBAN1HttpPostIn"/>
+      <wsdl:output message="tns:calculateIBAN1HttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <wsdl:input message="tns:calculateIBAN2HttpPostIn"/>
+      <wsdl:output message="tns:calculateIBAN2HttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <wsdl:input message="tns:controleIBANHttpPostIn"/>
+      <wsdl:output message="tns:controleIBANHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <wsdl:input message="tns:controleIBANerrorHttpPostIn"/>
+      <wsdl:output message="tns:controleIBANerrorHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <wsdl:input message="tns:querySwiftBICcodeHttpPostIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <wsdl:input message="tns:querySwiftBICcode1HttpPostIn"/>
+      <wsdl:output message="tns:querySwiftBICcode1HttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <wsdl:input message="tns:querySwiftBICcodeGetCountryListHttpPostIn"/>
+      <wsdl:output message="tns:querySwiftBICcodeGetCountryListHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IBANBICSoap" type="tns:IBANBICSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="About">
+      <soap:operation soapAction="http://tempuri.org/About" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap:operation soapAction="http://tempuri.org/Version" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <soap:operation soapAction="http://tempuri.org/getBelgianBBAN" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <soap:operation soapAction="http://tempuri.org/BBANtoIBANandBIC" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <soap:operation soapAction="http://tempuri.org/BBANtoIBAN" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <soap:operation soapAction="http://tempuri.org/BBANtoBIC" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <soap:operation soapAction="http://tempuri.org/BBANtoBANKNAME" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <soap:operation soapAction="http://tempuri.org/CheckBBAN" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <soap:operation soapAction="http://tempuri.org/getCountryList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <soap:operation soapAction="http://tempuri.org/calculateIBAN1" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <soap:operation soapAction="http://tempuri.org/calculateIBAN2" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <soap:operation soapAction="http://tempuri.org/controleIBAN" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <soap:operation soapAction="http://tempuri.org/controleIBANerror" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <soap:operation soapAction="http://tempuri.org/querySwiftBICcode" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <soap:operation soapAction="http://tempuri.org/querySwiftBICcode1" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <soap:operation soapAction="http://tempuri.org/querySwiftBICcodeGetCountryList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IBANBICSoap12" type="tns:IBANBICSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="About">
+      <soap12:operation soapAction="http://tempuri.org/About" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap12:operation soapAction="http://tempuri.org/Version" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <soap12:operation soapAction="http://tempuri.org/getBelgianBBAN" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <soap12:operation soapAction="http://tempuri.org/BBANtoIBANandBIC" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <soap12:operation soapAction="http://tempuri.org/BBANtoIBAN" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <soap12:operation soapAction="http://tempuri.org/BBANtoBIC" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <soap12:operation soapAction="http://tempuri.org/BBANtoBANKNAME" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <soap12:operation soapAction="http://tempuri.org/CheckBBAN" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <soap12:operation soapAction="http://tempuri.org/getCountryList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <soap12:operation soapAction="http://tempuri.org/calculateIBAN1" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <soap12:operation soapAction="http://tempuri.org/calculateIBAN2" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <soap12:operation soapAction="http://tempuri.org/controleIBAN" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <soap12:operation soapAction="http://tempuri.org/controleIBANerror" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <soap12:operation soapAction="http://tempuri.org/querySwiftBICcode" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <soap12:operation soapAction="http://tempuri.org/querySwiftBICcode1" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <soap12:operation soapAction="http://tempuri.org/querySwiftBICcodeGetCountryList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IBANBICHttpGet" type="tns:IBANBICHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="About">
+      <http:operation location="/About"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <http:operation location="/Version"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <http:operation location="/getBelgianBBAN"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <http:operation location="/BBANtoIBANandBIC"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <http:operation location="/BBANtoIBAN"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <http:operation location="/BBANtoBIC"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <http:operation location="/BBANtoBANKNAME"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <http:operation location="/CheckBBAN"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <http:operation location="/getCountryList"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <http:operation location="/calculateIBAN1"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <http:operation location="/calculateIBAN2"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <http:operation location="/controleIBAN"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <http:operation location="/controleIBANerror"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <http:operation location="/querySwiftBICcode"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <http:operation location="/querySwiftBICcode1"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <http:operation location="/querySwiftBICcodeGetCountryList"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IBANBICHttpPost" type="tns:IBANBICHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="About">
+      <http:operation location="/About"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <http:operation location="/Version"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBelgianBBAN">
+      <http:operation location="/getBelgianBBAN"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBANandBIC">
+      <http:operation location="/BBANtoIBANandBIC"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoIBAN">
+      <http:operation location="/BBANtoIBAN"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBIC">
+      <http:operation location="/BBANtoBIC"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BBANtoBANKNAME">
+      <http:operation location="/BBANtoBANKNAME"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckBBAN">
+      <http:operation location="/CheckBBAN"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <http:operation location="/getCountryList"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN1">
+      <http:operation location="/calculateIBAN1"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calculateIBAN2">
+      <http:operation location="/calculateIBAN2"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBAN">
+      <http:operation location="/controleIBAN"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="controleIBANerror">
+      <http:operation location="/controleIBANerror"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode">
+      <http:operation location="/querySwiftBICcode"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcode1">
+      <http:operation location="/querySwiftBICcode1"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="querySwiftBICcodeGetCountryList">
+      <http:operation location="/querySwiftBICcodeGetCountryList"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IBANBIC">
+    <wsdl:port name="IBANBICSoap" binding="tns:IBANBICSoap">
+      <soap:address location="https://www.ibanbic.be/IBANBIC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="IBANBICSoap12" binding="tns:IBANBICSoap12">
+      <soap12:address location="https://www.ibanbic.be/IBANBIC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="IBANBICHttpGet" binding="tns:IBANBICHttpGet">
+      <http:address location="https://www.ibanbic.be/IBANBIC.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="IBANBICHttpPost" binding="tns:IBANBICHttpPost">
+      <http:address location="https://www.ibanbic.be/IBANBIC.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint></con:endpoints><con:operation id="dd4461b3-39ec-4641-af7d-30a315668126" isOneWay="false" action="http://tempuri.org/About" name="About" bindingOperationName="About" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="64d98ea5-582a-4f7c-bd32-ba5e304a1f31" isOneWay="false" action="http://tempuri.org/BBANtoBANKNAME" name="BBANtoBANKNAME" bindingOperationName="BBANtoBANKNAME" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="6370dd63-d31a-4523-a47f-7488daf33fe2" isOneWay="false" action="http://tempuri.org/BBANtoBIC" name="BBANtoBIC" bindingOperationName="BBANtoBIC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="9ae71c2b-e98b-49fb-8193-7c1bc84331d6" isOneWay="false" action="http://tempuri.org/BBANtoIBAN" name="BBANtoIBAN" bindingOperationName="BBANtoIBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="2bf84835-0d96-49af-a507-8760080f21d6" isOneWay="false" action="http://tempuri.org/BBANtoIBANandBIC" name="BBANtoIBANandBIC" bindingOperationName="BBANtoIBANandBIC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="c3700caa-dfcf-4f8c-a7b8-2406a1380f99" isOneWay="false" action="http://tempuri.org/calculateIBAN1" name="calculateIBAN1" bindingOperationName="calculateIBAN1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="1f955cfd-6d68-48eb-97ef-7f26f47535de" isOneWay="false" action="http://tempuri.org/calculateIBAN2" name="calculateIBAN2" bindingOperationName="calculateIBAN2" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="6c081e68-ce8a-4a26-8ef3-5d240c80216d" isOneWay="false" action="http://tempuri.org/CheckBBAN" name="CheckBBAN" bindingOperationName="CheckBBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="68035d89-049d-43db-9922-fb90dfb7d56b" isOneWay="false" action="http://tempuri.org/controleIBAN" name="controleIBAN" bindingOperationName="controleIBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="33c71141-1089-44c8-95ac-72769f008162" isOneWay="false" action="http://tempuri.org/controleIBANerror" name="controleIBANerror" bindingOperationName="controleIBANerror" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="199ef10c-0a95-4103-813e-752b12914dbb" isOneWay="false" action="http://tempuri.org/getBelgianBBAN" name="getBelgianBBAN" bindingOperationName="getBelgianBBAN" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="b463f08e-676d-4eeb-85c3-651b4ed4e7d5" isOneWay="false" action="http://tempuri.org/getCountryList" name="getCountryList" bindingOperationName="getCountryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="59e7deab-efe2-4abb-8012-c579954a00a0" isOneWay="false" action="http://tempuri.org/querySwiftBICcode" name="querySwiftBICcode" bindingOperationName="querySwiftBICcode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="b7e7f9f8-1044-4cf8-9ecd-ff6fe41561a1" isOneWay="false" action="http://tempuri.org/querySwiftBICcode1" name="querySwiftBICcode1" bindingOperationName="querySwiftBICcode1" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="f30ad400-7c22-4c55-98ae-dba06fc13274" isOneWay="false" action="http://tempuri.org/querySwiftBICcodeGetCountryList" name="querySwiftBICcodeGetCountryList" bindingOperationName="querySwiftBICcodeGetCountryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="c7c64dea-78fe-4a6f-a622-667cfbc59d09" isOneWay="false" action="http://tempuri.org/Version" name="Version" bindingOperationName="Version" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation></con:interface><con:testSuite id="55f1ac5f-ae84-435d-8e02-d70477de9d7f" name="IBANBIC Converter"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3368fc9e-d08c-4d43-a3b7-aa24afd3f34f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify BE IBAN" searchProperties="true"><con:description>Implementation of following site
+https://www.ibanbic.be
+http://www.ibanbic.be/IBANBIC.asmx?WSDL
+
+SOAPUI documentation:
+https://www.soapui.org/apidocs/index.html</con:description><con:settings/><con:testStep type="request" name="Get Info" id="35a8b286-1462-4656-a195-a930dc041b22"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>IBANBICSoap12</con:interface><con:operation>About</con:operation><con:request name="Get Info" id="4555eb2f-c47a-415b-8330-45a5f46c5f64"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:About/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="706405a3-dc94-40e6-a884-b07c6680f2a6"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Get Version" id="b000781d-6857-4f82-ae56-c4ba8083eda3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>IBANBICSoap</con:interface><con:operation>Version</con:operation><con:request name="Get Version" id="da1f4a7d-d426-403e-85a2-e0945bf4fd56"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Version/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5ef95088-c267-40d7-b011-63268f9e39c7"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Store InfoVersion" id="367074a0-c069-463e-857a-fe2d3cdc50fe"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>getInfoResult</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Get Info</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace tmpuri='http://tempuri.org/';
+
+/soap:Envelope/soap:Body/tmpuri:AboutResponse/tmpuri:AboutResult</con:sourcePath><con:targetType>IBANBICAboutValue</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>getVersionResult</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Get Version</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace tmpuri='http://tempuri.org/';
+
+/soap:Envelope/soap:Body/tmpuri:VersionResponse/tmpuri:VersionResult</con:sourcePath><con:targetType>IBANBICVersionValue</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="groovy" name="Show About" id="c763976f-5d21-48f0-818f-16ebb4a980f0"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.support.UISupport;
+import java.util.Properties;
+import java.awt.Dimension;
+
+def testcase = testRunner.testCase;
+
+String IBANBICAboutValue = testcase.getPropertyValue("IBANBICAboutValue");
+String IBANBICVersionValue = testcase.getPropertyValue("IBANBICVersionValue");
+
+String messageText = "<html><body><div>About: ${IBANBICAboutValue}<br><br>Version: ${IBANBICVersionValue}</div></body></html>";
+String messageDescription = "IBANBIC Webservice information";
+String messageTitle = "About";
+
+UISupport.showExtendedInfo(messageTitle,messageDescription,messageText,new Dimension(800, 250));
+
+String ibanQuestion = "IBAN";
+String ibanTitle = "Belgian IBAN Converter";
+String ibanDefault = "";
+
+String ibanNumber = UISupport.prompt(ibanQuestion,ibanTitle,ibanDefault);
+
+// Handle the cancel-click, prompt returns null when pressed cancel button
+if (!ibanNumber?.trim()) {
+  String[] propToRemove = new String[testcase.getPropertyCount()];
+  String emptyPropValue = "";
+  propToRemove = testcase.getPropertyNames();
+  log.info(" Clearing "+propToRemove.size()+" property values");
+  for ( int i = 0 ; i < propToRemove.size(); i++ ){
+    testcase.setPropertyValue(propToRemove[i],emptyPropValue);
+  }
+  String cancelMessage = "No IBAN provided";
+  testRunner.cancel(cancelMessage);
+  UISupport.showInfoMessage(cancelMessage,"Result");
+} else {
+  testcase.setPropertyValue("IBANBICIbanNumber",ibanNumber);
+}
+
+return;]]></script></con:config></con:testStep><con:testStep type="transfer" name="Prepare Verfiy IBAN" id="9c9d04ee-e0b8-4ae3-b3a8-563cab768b98"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>setIBANNumber</con:name><con:sourceType>IBANBICIbanNumber</con:sourceType><con:sourceStep>#TestCase#</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>Verfiy IBAN</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace tmpuri='http://tempuri.org/';
+
+/soap:Envelope/soap:Body/tmpuri:controleIBAN/tmpuri:iban</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="Verfiy IBAN" id="7fee0aab-1a2d-4f35-8317-66d98d77e231"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>IBANBICSoap12</con:interface><con:operation>controleIBAN</con:operation><con:request name="Verfiy IBAN" id="c72755cd-f99d-41d4-9bbb-03a51142ca30"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:controleIBAN>
+         <tem:iban></tem:iban>
+      </tem:controleIBAN>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="55c4f346-386e-4262-8f4c-4c083fef9dbe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Show Result" id="b1a483c8-e5ec-4c2a-9be8-136bf7e3b712"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
+import groovy.util.slurpersupport.GPathResult;
+import org.xml.sax.*;
+import com.eviware.soapui.support.types.*;
+import com.eviware.soapui.model.testsuite.*;
+
+int currentStepInd = context.currentStepIndex
+TestCase testcase = testRunner.testCase;
+TestStep verifyIBANStep = testcase.getTestStepAt(currentStepInd - 1)
+
+String resultMessage = '';
+
+try{
+  String verifyIBANResponseHdrCt = verifyIBANStep.testRequest.getResponse().getContentType();
+
+  if (verifyIBANResponseHdrCt.contains("xml")) {
+  	String verifyIBANResponse = verifyIBANStep.testRequest.getResponse().getContentAsXml();
+  	  
+     GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(verifyIBANResponse);
+  	
+  	XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
+  	               .declareNamespace(soapenv: 'http://www.w3.org/2003/05/soap-envelope')
+  	               .declareNamespace(tmpuri: 'http://tempuri.org/');
+  
+     String validationResult = XMLPResponseEnv.'soapenv:Body'.'tmpuri:controleIBANResponse'.'tmpuri:controleIBANResult'.text();
+     String ibanNumber = testcase.getPropertyValue("IBANBICIbanNumber");
+
+     if ("true".equals(validationResult)) {
+     	resultMessage = "IBAN ${ibanNumber} is VALID";
+     } else {
+     	resultMessage = "IBAN ${ibanNumber} is INVALID";
+     }
+  } else if (verifyIBANResponseHdrCt.startsWith("EMPTY")) {
+  	resultMessage = "No response received!!";
+  } else {
+  	resultMessage = "Response is not an xml, unable to process.";
+  }
+} catch(SAXException SAXex){
+	resultMessage = "Unable to process response message: "+SAXex.getMessage();
+} catch(NullPointerException NPex) {
+	resultMessage = "No response found: "+NPex.getMessage();
+} catch(Exception ex) {
+    resultMessage = "Unable to process response message: "+ex.getMessage();
+} finally {
+	UISupport.showInfoMessage(resultMessage);
+}
+
+return;</script></con:config></con:testStep><con:loadTest id="89c16217-1db2-4284-b384-6220205a8f8f" name="verify Multi BE IBAN"><con:settings/><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:setupScript>def scriptlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log");
+def soapUIlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("SoapUI log");
+def httplogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("http log");
+def testcase = testRunner.testCase;
+
+scriptlogArea.clear();
+soapUIlogArea.clear();
+httplogArea.clear();
+
+log.info(" Running "+ testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>IBANBICAboutValue</con:name><con:value/></con:property><con:property><con:name>IBANBICVersionValue</con:name><con:value/></con:property><con:property><con:name>IBANBICIbanNumber</con:name><con:value/></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
