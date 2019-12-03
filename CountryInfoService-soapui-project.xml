@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="1b49ad3a-4ab6-4ef7-99d7-f836271cba12" activeEnvironment="Default" name="CountryInfoService - Websample" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="03648c8e-1964-4b4a-be8f-ab4acc215b46" wsaVersion="NONE" name="CountryInfoServiceSoapBinding" type="wsdl" bindingName="{http://www.oorsprong.org/websamples.countryinfo}CountryInfoServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint></con:endpoints><con:operation id="19586145-702d-495b-9cf9-edc8a025ae16" isOneWay="false" action="" name="CapitalCity" bindingOperationName="CapitalCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3aa3cfdd-37be-4ce7-8032-5178c8cad3d5" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CapitalCity>\r
+         <web:sCountryISOCode>NL</web:sCountryISOCode>\r
+      </web:CapitalCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dc1b4a9c-ae58-46da-9992-4f356d96fc70" isOneWay="false" action="" name="CountriesUsingCurrency" bindingOperationName="CountriesUsingCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c88f85a5-5f1e-4f80-9231-ddc7b99d945e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountriesUsingCurrency>\r
+         <web:sISOCurrencyCode>EUR</web:sISOCurrencyCode>\r
+      </web:CountriesUsingCurrency>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountriesUsingCurrencyRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3a05d397-5440-47fb-8d81-86f65f6d14d2" isOneWay="false" action="" name="CountryCurrency" bindingOperationName="CountryCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6c96838f-6fd3-411f-ae71-7e9ce4e27286" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryCurrency>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:CountryCurrency>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryCurrencyRequest"/></con:call></con:operation><con:operation id="9054b0e5-c3c0-4f83-a77b-2612721a2b8d" isOneWay="false" action="" name="CountryFlag" bindingOperationName="CountryFlag" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6847c290-4aa5-4185-88db-b6d7dbde29a5" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryFlag>\r
+         <web:sCountryISOCode>BE</web:sCountryISOCode>\r
+      </web:CountryFlag>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryFlagRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="2f2352a3-c504-4995-a561-7d326f074a8d" isOneWay="false" action="" name="CountryIntPhoneCode" bindingOperationName="CountryIntPhoneCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fdfdabe7-9345-487f-b45b-b5b962447486" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryIntPhoneCode>\r
+         <web:sCountryISOCode>BE</web:sCountryISOCode>\r
+      </web:CountryIntPhoneCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryIntPhoneCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="1c141015-b106-4812-830d-c76a6876906c" isOneWay="false" action="" name="CountryISOCode" bindingOperationName="CountryISOCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e104d0a7-d5d6-4e50-afcd-6405e4600ebe" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryISOCode>\r
+         <web:sCountryName>?</web:sCountryName>\r
+      </web:CountryISOCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/></con:call></con:operation><con:operation id="3a8a3b20-b1ff-4ccd-b630-0c1a0380673c" isOneWay="false" action="" name="CountryName" bindingOperationName="CountryName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6e59ba52-f281-415e-afbc-de7f998963a4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CountryName>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:CountryName>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryNameRequest"/></con:call></con:operation><con:operation id="d0847a29-9044-47d7-a542-5b8bcf9bae65" isOneWay="false" action="" name="CurrencyName" bindingOperationName="CurrencyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ea6261a3-61fc-4807-ade7-d221d0c48a59" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:CurrencyName>\r
+         <web:sCurrencyISOCode>?</web:sCurrencyISOCode>\r
+      </web:CurrencyName>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CurrencyNameRequest"/></con:call></con:operation><con:operation id="02dc12f3-2fe5-4e98-8116-6722d41c99b3" isOneWay="false" action="" name="FullCountryInfo" bindingOperationName="FullCountryInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5e0069b8-093f-4c1f-9c54-9e665a396f98" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:FullCountryInfo>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:FullCountryInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/FullCountryInfoRequest"/></con:call></con:operation><con:operation id="e74edf3a-382a-4fdf-a5b6-928e04873460" isOneWay="false" action="" name="FullCountryInfoAllCountries" bindingOperationName="FullCountryInfoAllCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5499b754-faa0-4c20-bda8-329e456309ee" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:FullCountryInfoAllCountries/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/FullCountryInfoAllCountriesRequest"/></con:call></con:operation><con:operation id="7829e1a0-7729-42af-85da-c7e690970c39" isOneWay="false" action="" name="LanguageISOCode" bindingOperationName="LanguageISOCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ccfc9233-e59b-44bc-9bd9-eb734cbd1be3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:LanguageISOCode>\r
+         <web:sLanguageName>Dutch</web:sLanguageName>\r
+      </web:LanguageISOCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/LanguageISOCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9d754862-da70-414a-ae13-565bdeec4fbb" isOneWay="false" action="" name="LanguageName" bindingOperationName="LanguageName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8dadb9db-8257-45f5-b20d-a2884d917ea1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:LanguageName>\r
+         <web:sISOCode>?</web:sISOCode>\r
+      </web:LanguageName>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/LanguageNameRequest"/></con:call></con:operation><con:operation id="8291b3c1-843d-462a-9ec4-f0c4692d56e1" isOneWay="false" action="" name="ListOfContinentsByCode" bindingOperationName="ListOfContinentsByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="43177b74-2a6d-4612-b478-3fcdafd37ae7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfContinentsByCode/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfContinentsByCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="eb767af9-9c4b-424a-b4c9-dcd615780779" isOneWay="false" action="" name="ListOfContinentsByName" bindingOperationName="ListOfContinentsByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="105e4c14-73c4-42d1-a8df-fcd26545ffc8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfContinentsByName/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfContinentsByNameRequest"/></con:call></con:operation><con:operation id="e128cec6-3426-45ef-a8ff-cb975baba982" isOneWay="false" action="" name="ListOfCountryNamesByCode" bindingOperationName="ListOfCountryNamesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a01a8026-170e-40a0-a475-d4d6e1c0a5cc" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfCountryNamesByCode/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="5928ae57-9ab8-447d-ac6d-9fc0156b8e48" isOneWay="false" action="" name="ListOfCountryNamesByName" bindingOperationName="ListOfCountryNamesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9f407111-7e33-450b-9abe-6acf67336d18" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfCountryNamesByName/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByNameRequest"/></con:call></con:operation><con:operation id="6bb6e4e2-220c-4832-9f72-7cfc1c6b5b87" isOneWay="false" action="" name="ListOfCountryNamesGroupedByContinent" bindingOperationName="ListOfCountryNamesGroupedByContinent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="581adda8-b855-4f8a-b96f-9fe8337e6ec1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfCountryNamesGroupedByContinent/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesGroupedByContinentRequest"/></con:call></con:operation><con:operation id="8e608d2b-1f96-4e1b-9978-fb0c141a2f9b" isOneWay="false" action="" name="ListOfCurrenciesByCode" bindingOperationName="ListOfCurrenciesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d6a88910-d30f-44ad-a4f2-41f104b21980" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfCurrenciesByCode/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCurrenciesByCodeRequest"/></con:call></con:operation><con:operation id="56021e71-dbe5-458d-b35d-1ee5e793f1a7" isOneWay="false" action="" name="ListOfCurrenciesByName" bindingOperationName="ListOfCurrenciesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a109cb50-bea8-4aa8-ac2c-39e84a7c1e6b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfCurrenciesByName/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCurrenciesByNameRequest"/></con:call></con:operation><con:operation id="36afb839-c1a0-47e6-a293-4a254c279bb5" isOneWay="false" action="" name="ListOfLanguagesByCode" bindingOperationName="ListOfLanguagesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="16d6679f-9630-4e62-aa3a-623022d3181e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfLanguagesByCode/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByCodeRequest"/></con:call></con:operation><con:operation id="992b1995-a581-49ce-b084-e3ba75a8d5fd" isOneWay="false" action="" name="ListOfLanguagesByName" bindingOperationName="ListOfLanguagesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c2b8c79e-ee2b-4767-bd58-2253d0217322" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ListOfLanguagesByName/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="4068ff35-7a99-48b6-9df5-e2253d59b3b8" wsaVersion="NONE" name="CountryInfoServiceSoapBinding12" type="wsdl" bindingName="{http://www.oorsprong.org/websamples.countryinfo}CountryInfoServiceSoapBinding12" soapVersion="1_2" anonymous="optional" definition="http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL"><con:part><con:url>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</con:url><con:content><![CDATA[<definitions name="CountryInfoService" targetNamespace="http://www.oorsprong.org/websamples.countryinfo" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.oorsprong.org/websamples.countryinfo">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.oorsprong.org/websamples.countryinfo">
+      <xs:complexType name="tContinent">
+        <xs:sequence>
+          <xs:element name="sCode" type="xs:string"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tCurrency">
+        <xs:sequence>
+          <xs:element name="sISOCode" type="xs:string"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tCountryCodeAndName">
+        <xs:sequence>
+          <xs:element name="sISOCode" type="xs:string"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tCountryCodeAndNameGroupedByContinent">
+        <xs:sequence>
+          <xs:element name="Continent" type="tns:tContinent"/>
+          <xs:element name="CountryCodeAndNames" type="tns:ArrayOftCountryCodeAndName"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tCountryInfo">
+        <xs:sequence>
+          <xs:element name="sISOCode" type="xs:string"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="sCapitalCity" type="xs:string"/>
+          <xs:element name="sPhoneCode" type="xs:string"/>
+          <xs:element name="sContinentCode" type="xs:string"/>
+          <xs:element name="sCurrencyISOCode" type="xs:string"/>
+          <xs:element name="sCountryFlag" type="xs:string"/>
+          <xs:element name="Languages" type="tns:ArrayOftLanguage"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tLanguage">
+        <xs:sequence>
+          <xs:element name="sISOCode" type="xs:string"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftCountryCodeAndName">
+        <xs:sequence>
+          <xs:element name="tCountryCodeAndName" type="tns:tCountryCodeAndName" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftLanguage">
+        <xs:sequence>
+          <xs:element name="tLanguage" type="tns:tLanguage" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftContinent">
+        <xs:sequence>
+          <xs:element name="tContinent" type="tns:tContinent" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftCurrency">
+        <xs:sequence>
+          <xs:element name="tCurrency" type="tns:tCurrency" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftCountryCodeAndNameGroupedByContinent">
+        <xs:sequence>
+          <xs:element name="tCountryCodeAndNameGroupedByContinent" type="tns:tCountryCodeAndNameGroupedByContinent" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftCountryInfo">
+        <xs:sequence>
+          <xs:element name="tCountryInfo" type="tns:tCountryInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ListOfContinentsByName">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfContinentsByNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfContinentsByNameResult" type="tns:ArrayOftContinent"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfContinentsByCode">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfContinentsByCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfContinentsByCodeResult" type="tns:ArrayOftContinent"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCurrenciesByName">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCurrenciesByNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfCurrenciesByNameResult" type="tns:ArrayOftCurrency"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCurrenciesByCode">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCurrenciesByCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfCurrenciesByCodeResult" type="tns:ArrayOftCurrency"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CurrencyName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCurrencyISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CurrencyNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CurrencyNameResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesByCode">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesByCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfCountryNamesByCodeResult" type="tns:ArrayOftCountryCodeAndName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesByName">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesByNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfCountryNamesByNameResult" type="tns:ArrayOftCountryCodeAndName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesGroupedByContinent">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfCountryNamesGroupedByContinentResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfCountryNamesGroupedByContinentResult" type="tns:ArrayOftCountryCodeAndNameGroupedByContinent"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountryNameResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryISOCode">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryISOCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountryISOCodeResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CapitalCity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CapitalCityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CapitalCityResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryCurrency">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryCurrencyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountryCurrencyResult" type="tns:tCurrency"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryFlag">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryFlagResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountryFlagResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryIntPhoneCode">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountryIntPhoneCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountryIntPhoneCodeResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FullCountryInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FullCountryInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FullCountryInfoResult" type="tns:tCountryInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FullCountryInfoAllCountries">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FullCountryInfoAllCountriesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FullCountryInfoAllCountriesResult" type="tns:ArrayOftCountryInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountriesUsingCurrency">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sISOCurrencyCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountriesUsingCurrencyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountriesUsingCurrencyResult" type="tns:ArrayOftCountryCodeAndName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfLanguagesByName">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfLanguagesByNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfLanguagesByNameResult" type="tns:ArrayOftLanguage"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfLanguagesByCode">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ListOfLanguagesByCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ListOfLanguagesByCodeResult" type="tns:ArrayOftLanguage"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LanguageName">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sISOCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LanguageNameResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LanguageNameResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LanguageISOCode">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sLanguageName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LanguageISOCodeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LanguageISOCodeResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="ListOfContinentsByNameSoapRequest">
+    <part name="parameters" element="tns:ListOfContinentsByName"/>
+  </message>
+  <message name="ListOfContinentsByNameSoapResponse">
+    <part name="parameters" element="tns:ListOfContinentsByNameResponse"/>
+  </message>
+  <message name="ListOfContinentsByCodeSoapRequest">
+    <part name="parameters" element="tns:ListOfContinentsByCode"/>
+  </message>
+  <message name="ListOfContinentsByCodeSoapResponse">
+    <part name="parameters" element="tns:ListOfContinentsByCodeResponse"/>
+  </message>
+  <message name="ListOfCurrenciesByNameSoapRequest">
+    <part name="parameters" element="tns:ListOfCurrenciesByName"/>
+  </message>
+  <message name="ListOfCurrenciesByNameSoapResponse">
+    <part name="parameters" element="tns:ListOfCurrenciesByNameResponse"/>
+  </message>
+  <message name="ListOfCurrenciesByCodeSoapRequest">
+    <part name="parameters" element="tns:ListOfCurrenciesByCode"/>
+  </message>
+  <message name="ListOfCurrenciesByCodeSoapResponse">
+    <part name="parameters" element="tns:ListOfCurrenciesByCodeResponse"/>
+  </message>
+  <message name="CurrencyNameSoapRequest">
+    <part name="parameters" element="tns:CurrencyName"/>
+  </message>
+  <message name="CurrencyNameSoapResponse">
+    <part name="parameters" element="tns:CurrencyNameResponse"/>
+  </message>
+  <message name="ListOfCountryNamesByCodeSoapRequest">
+    <part name="parameters" element="tns:ListOfCountryNamesByCode"/>
+  </message>
+  <message name="ListOfCountryNamesByCodeSoapResponse">
+    <part name="parameters" element="tns:ListOfCountryNamesByCodeResponse"/>
+  </message>
+  <message name="ListOfCountryNamesByNameSoapRequest">
+    <part name="parameters" element="tns:ListOfCountryNamesByName"/>
+  </message>
+  <message name="ListOfCountryNamesByNameSoapResponse">
+    <part name="parameters" element="tns:ListOfCountryNamesByNameResponse"/>
+  </message>
+  <message name="ListOfCountryNamesGroupedByContinentSoapRequest">
+    <part name="parameters" element="tns:ListOfCountryNamesGroupedByContinent"/>
+  </message>
+  <message name="ListOfCountryNamesGroupedByContinentSoapResponse">
+    <part name="parameters" element="tns:ListOfCountryNamesGroupedByContinentResponse"/>
+  </message>
+  <message name="CountryNameSoapRequest">
+    <part name="parameters" element="tns:CountryName"/>
+  </message>
+  <message name="CountryNameSoapResponse">
+    <part name="parameters" element="tns:CountryNameResponse"/>
+  </message>
+  <message name="CountryISOCodeSoapRequest">
+    <part name="parameters" element="tns:CountryISOCode"/>
+  </message>
+  <message name="CountryISOCodeSoapResponse">
+    <part name="parameters" element="tns:CountryISOCodeResponse"/>
+  </message>
+  <message name="CapitalCitySoapRequest">
+    <part name="parameters" element="tns:CapitalCity"/>
+  </message>
+  <message name="CapitalCitySoapResponse">
+    <part name="parameters" element="tns:CapitalCityResponse"/>
+  </message>
+  <message name="CountryCurrencySoapRequest">
+    <part name="parameters" element="tns:CountryCurrency"/>
+  </message>
+  <message name="CountryCurrencySoapResponse">
+    <part name="parameters" element="tns:CountryCurrencyResponse"/>
+  </message>
+  <message name="CountryFlagSoapRequest">
+    <part name="parameters" element="tns:CountryFlag"/>
+  </message>
+  <message name="CountryFlagSoapResponse">
+    <part name="parameters" element="tns:CountryFlagResponse"/>
+  </message>
+  <message name="CountryIntPhoneCodeSoapRequest">
+    <part name="parameters" element="tns:CountryIntPhoneCode"/>
+  </message>
+  <message name="CountryIntPhoneCodeSoapResponse">
+    <part name="parameters" element="tns:CountryIntPhoneCodeResponse"/>
+  </message>
+  <message name="FullCountryInfoSoapRequest">
+    <part name="parameters" element="tns:FullCountryInfo"/>
+  </message>
+  <message name="FullCountryInfoSoapResponse">
+    <part name="parameters" element="tns:FullCountryInfoResponse"/>
+  </message>
+  <message name="FullCountryInfoAllCountriesSoapRequest">
+    <part name="parameters" element="tns:FullCountryInfoAllCountries"/>
+  </message>
+  <message name="FullCountryInfoAllCountriesSoapResponse">
+    <part name="parameters" element="tns:FullCountryInfoAllCountriesResponse"/>
+  </message>
+  <message name="CountriesUsingCurrencySoapRequest">
+    <part name="parameters" element="tns:CountriesUsingCurrency"/>
+  </message>
+  <message name="CountriesUsingCurrencySoapResponse">
+    <part name="parameters" element="tns:CountriesUsingCurrencyResponse"/>
+  </message>
+  <message name="ListOfLanguagesByNameSoapRequest">
+    <part name="parameters" element="tns:ListOfLanguagesByName"/>
+  </message>
+  <message name="ListOfLanguagesByNameSoapResponse">
+    <part name="parameters" element="tns:ListOfLanguagesByNameResponse"/>
+  </message>
+  <message name="ListOfLanguagesByCodeSoapRequest">
+    <part name="parameters" element="tns:ListOfLanguagesByCode"/>
+  </message>
+  <message name="ListOfLanguagesByCodeSoapResponse">
+    <part name="parameters" element="tns:ListOfLanguagesByCodeResponse"/>
+  </message>
+  <message name="LanguageNameSoapRequest">
+    <part name="parameters" element="tns:LanguageName"/>
+  </message>
+  <message name="LanguageNameSoapResponse">
+    <part name="parameters" element="tns:LanguageNameResponse"/>
+  </message>
+  <message name="LanguageISOCodeSoapRequest">
+    <part name="parameters" element="tns:LanguageISOCode"/>
+  </message>
+  <message name="LanguageISOCodeSoapResponse">
+    <part name="parameters" element="tns:LanguageISOCodeResponse"/>
+  </message>
+  <portType name="CountryInfoServiceSoapType">
+    <operation name="ListOfContinentsByName">
+      <documentation>Returns a list of continents ordered by name.</documentation>
+      <input message="tns:ListOfContinentsByNameSoapRequest"/>
+      <output message="tns:ListOfContinentsByNameSoapResponse"/>
+    </operation>
+    <operation name="ListOfContinentsByCode">
+      <documentation>Returns a list of continents ordered by code.</documentation>
+      <input message="tns:ListOfContinentsByCodeSoapRequest"/>
+      <output message="tns:ListOfContinentsByCodeSoapResponse"/>
+    </operation>
+    <operation name="ListOfCurrenciesByName">
+      <documentation>Returns a list of currencies ordered by name.</documentation>
+      <input message="tns:ListOfCurrenciesByNameSoapRequest"/>
+      <output message="tns:ListOfCurrenciesByNameSoapResponse"/>
+    </operation>
+    <operation name="ListOfCurrenciesByCode">
+      <documentation>Returns a list of currencies ordered by code.</documentation>
+      <input message="tns:ListOfCurrenciesByCodeSoapRequest"/>
+      <output message="tns:ListOfCurrenciesByCodeSoapResponse"/>
+    </operation>
+    <operation name="CurrencyName">
+      <documentation>Returns the name of the currency (if found)</documentation>
+      <input message="tns:CurrencyNameSoapRequest"/>
+      <output message="tns:CurrencyNameSoapResponse"/>
+    </operation>
+    <operation name="ListOfCountryNamesByCode">
+      <documentation>Returns a list of all stored counties ordered by ISO code</documentation>
+      <input message="tns:ListOfCountryNamesByCodeSoapRequest"/>
+      <output message="tns:ListOfCountryNamesByCodeSoapResponse"/>
+    </operation>
+    <operation name="ListOfCountryNamesByName">
+      <documentation>Returns a list of all stored counties ordered by country name</documentation>
+      <input message="tns:ListOfCountryNamesByNameSoapRequest"/>
+      <output message="tns:ListOfCountryNamesByNameSoapResponse"/>
+    </operation>
+    <operation name="ListOfCountryNamesGroupedByContinent">
+      <documentation>Returns a list of all stored counties grouped per continent</documentation>
+      <input message="tns:ListOfCountryNamesGroupedByContinentSoapRequest"/>
+      <output message="tns:ListOfCountryNamesGroupedByContinentSoapResponse"/>
+    </operation>
+    <operation name="CountryName">
+      <documentation>Searches the database for a country by the passed ISO country code</documentation>
+      <input message="tns:CountryNameSoapRequest"/>
+      <output message="tns:CountryNameSoapResponse"/>
+    </operation>
+    <operation name="CountryISOCode">
+      <documentation>This function tries to found a country based on the passed country name.</documentation>
+      <input message="tns:CountryISOCodeSoapRequest"/>
+      <output message="tns:CountryISOCodeSoapResponse"/>
+    </operation>
+    <operation name="CapitalCity">
+      <documentation>Returns the  name of the captial city for the passed country code</documentation>
+      <input message="tns:CapitalCitySoapRequest"/>
+      <output message="tns:CapitalCitySoapResponse"/>
+    </operation>
+    <operation name="CountryCurrency">
+      <documentation>Returns the currency ISO code and name for the passed country ISO code</documentation>
+      <input message="tns:CountryCurrencySoapRequest"/>
+      <output message="tns:CountryCurrencySoapResponse"/>
+    </operation>
+    <operation name="CountryFlag">
+      <documentation>Returns a link to a picture of the country flag</documentation>
+      <input message="tns:CountryFlagSoapRequest"/>
+      <output message="tns:CountryFlagSoapResponse"/>
+    </operation>
+    <operation name="CountryIntPhoneCode">
+      <documentation>Returns the internation phone code for the passed ISO country code</documentation>
+      <input message="tns:CountryIntPhoneCodeSoapRequest"/>
+      <output message="tns:CountryIntPhoneCodeSoapResponse"/>
+    </operation>
+    <operation name="FullCountryInfo">
+      <documentation>Returns a struct with all the stored country information. Pass the ISO country code</documentation>
+      <input message="tns:FullCountryInfoSoapRequest"/>
+      <output message="tns:FullCountryInfoSoapResponse"/>
+    </operation>
+    <operation name="FullCountryInfoAllCountries">
+      <documentation>Returns an array with all countries and all the language information stored</documentation>
+      <input message="tns:FullCountryInfoAllCountriesSoapRequest"/>
+      <output message="tns:FullCountryInfoAllCountriesSoapResponse"/>
+    </operation>
+    <operation name="CountriesUsingCurrency">
+      <documentation>Returns a list of all countries that use the same currency code. Pass a ISO currency code</documentation>
+      <input message="tns:CountriesUsingCurrencySoapRequest"/>
+      <output message="tns:CountriesUsingCurrencySoapResponse"/>
+    </operation>
+    <operation name="ListOfLanguagesByName">
+      <documentation>Returns an array of languages ordered by name</documentation>
+      <input message="tns:ListOfLanguagesByNameSoapRequest"/>
+      <output message="tns:ListOfLanguagesByNameSoapResponse"/>
+    </operation>
+    <operation name="ListOfLanguagesByCode">
+      <documentation>Returns an array of languages ordered by code</documentation>
+      <input message="tns:ListOfLanguagesByCodeSoapRequest"/>
+      <output message="tns:ListOfLanguagesByCodeSoapResponse"/>
+    </operation>
+    <operation name="LanguageName">
+      <documentation>Find a language name based on the passed ISO language code</documentation>
+      <input message="tns:LanguageNameSoapRequest"/>
+      <output message="tns:LanguageNameSoapResponse"/>
+    </operation>
+    <operation name="LanguageISOCode">
+      <documentation>Find a language ISO code based on the passed language name</documentation>
+      <input message="tns:LanguageISOCodeSoapRequest"/>
+      <output message="tns:LanguageISOCodeSoapResponse"/>
+    </operation>
+  </portType>
+  <binding name="CountryInfoServiceSoapBinding" type="tns:CountryInfoServiceSoapType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="ListOfContinentsByName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfContinentsByCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCurrenciesByName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCurrenciesByCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CurrencyName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesByCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesByName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesGroupedByContinent">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryISOCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CapitalCity">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryCurrency">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryFlag">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryIntPhoneCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FullCountryInfo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FullCountryInfoAllCountries">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountriesUsingCurrency">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfLanguagesByName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfLanguagesByCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LanguageName">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LanguageISOCode">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="CountryInfoServiceSoapBinding12" type="tns:CountryInfoServiceSoapType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="ListOfContinentsByName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfContinentsByCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCurrenciesByName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCurrenciesByCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CurrencyName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesByCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesByName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfCountryNamesGroupedByContinent">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryISOCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CapitalCity">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryCurrency">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryFlag">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountryIntPhoneCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FullCountryInfo">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FullCountryInfoAllCountries">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CountriesUsingCurrency">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfLanguagesByName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ListOfLanguagesByCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LanguageName">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LanguageISOCode">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="CountryInfoService">
+    <documentation>This DataFlex Web Service opens up country information. 2 letter ISO codes are used for Country code. There are functions to retrieve the used Currency, Language, Capital City, Continent and Telephone code.</documentation>
+    <port name="CountryInfoServiceSoap" binding="tns:CountryInfoServiceSoapBinding">
+      <soap:address location="http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"/>
+    </port>
+    <port name="CountryInfoServiceSoap12" binding="tns:CountryInfoServiceSoapBinding12">
+      <soap12:address location="http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint></con:endpoints><con:operation id="2788fdcb-de6a-43a9-8c5d-ec07fe853c5f" isOneWay="false" action="" name="CapitalCity" bindingOperationName="CapitalCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c8d59d50-9f84-408a-929c-2b54b3d35338" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CapitalCity>\r
+         <web:sCountryISOCode>BE</web:sCountryISOCode>\r
+      </web:CapitalCity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CapitalCityRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="18f5f437-7461-4c66-85bd-58a8f23561cc" isOneWay="false" action="" name="CountriesUsingCurrency" bindingOperationName="CountriesUsingCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="07f34f84-05b1-471e-8a0e-3e3b94bcdfca" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountriesUsingCurrency>\r
+         <web:sISOCurrencyCode>EUR</web:sISOCurrencyCode>\r
+      </web:CountriesUsingCurrency>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountriesUsingCurrencyRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="12cecd80-ba08-400f-b4dd-c54041a93105" isOneWay="false" action="" name="CountryCurrency" bindingOperationName="CountryCurrency" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d59186e3-dea6-4549-a336-6fcbfe0f89f9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountryCurrency>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:CountryCurrency>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryCurrencyRequest"/></con:call></con:operation><con:operation id="b76077e1-88d7-4f7d-a2f6-e43228ed8578" isOneWay="false" action="" name="CountryFlag" bindingOperationName="CountryFlag" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d6f03f6c-8e05-4565-93fe-3a9d85ebea11" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountryFlag>\r
+         <web:sCountryISOCode>cid:{25412241111}</web:sCountryISOCode>\r
+      </web:CountryFlag>\r
+   </soap:Body>\r
+</soap:Envelope>	]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:attachment><con:name>SoapUI-Spashscreen.png</con:name><con:contentType>image/x-png</con:contentType><con:size>37586</con:size><con:contentId>SoapUI-Spashscreen.png</con:contentId><con:part xsi:nil="true"/><con:data>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</con:data><con:id>e6700337-c1f9-4d4a-86f8-743bd023a684</con:id></con:attachment><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryFlagRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a3177cc6-acd7-453a-bb2d-cfc2fe0f0f30" isOneWay="false" action="" name="CountryIntPhoneCode" bindingOperationName="CountryIntPhoneCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c0f8b0ee-c959-46ae-9ea2-bd2055d60599" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountryIntPhoneCode>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:CountryIntPhoneCode>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryIntPhoneCodeRequest"/></con:call></con:operation><con:operation id="93f14e1f-3ebe-4f3c-aa30-4054b33f699b" isOneWay="false" action="" name="CountryISOCode" bindingOperationName="CountryISOCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="553f3405-8037-4b8c-92db-4149f0eca039" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountryISOCode>\r
+         <web:sCountryName>Belgium</web:sCountryName>\r
+      </web:CountryISOCode>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3ff1982c-2de5-49bb-bbf5-90d17a2e39a7" isOneWay="false" action="" name="CountryName" bindingOperationName="CountryName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3feb8419-cb84-4edf-9d1c-55e8d3d646b8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CountryName>\r
+         <web:sCountryISOCode>?</web:sCountryISOCode>\r
+      </web:CountryName>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryNameRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="0aa9ea1a-c055-4fdf-bec1-5f4e450df5f9" isOneWay="false" action="" name="CurrencyName" bindingOperationName="CurrencyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="407d1a1b-9812-4e52-8b41-166aa7669ff5" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:CurrencyName>\r
+         <web:sCurrencyISOCode>NOK</web:sCurrencyISOCode>\r
+      </web:CurrencyName>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CurrencyNameRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c01e88f3-8825-4c5d-9ed0-900879d228d7" isOneWay="false" action="" name="FullCountryInfo" bindingOperationName="FullCountryInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d9466a9d-865c-48a6-bbeb-77c19e277e50" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:FullCountryInfo>\r
+         <web:sCountryISOCode>ET</web:sCountryISOCode>\r
+      </web:FullCountryInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/FullCountryInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="00ea9b7f-9ae6-46f0-a20a-97c5142e02fd" isOneWay="false" action="" name="FullCountryInfoAllCountries" bindingOperationName="FullCountryInfoAllCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dcebdf1c-5b12-4975-80f4-ea6f6e44729e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:FullCountryInfoAllCountries/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/FullCountryInfoAllCountriesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="47068e9b-aa4e-41ca-8c65-a4cf4ce5c58e" isOneWay="false" action="" name="LanguageISOCode" bindingOperationName="LanguageISOCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="24e715da-d59c-4147-8b5a-e6d08f452d33" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:LanguageISOCode>\r
+         <web:sLanguageName>?</web:sLanguageName>\r
+      </web:LanguageISOCode>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/LanguageISOCodeRequest"/></con:call></con:operation><con:operation id="40a5cb44-15f4-4976-8d70-de879856201d" isOneWay="false" action="" name="LanguageName" bindingOperationName="LanguageName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a2eea75f-7694-44bd-a075-ef3dffb8b683" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:LanguageName>\r
+         <web:sISOCode>?</web:sISOCode>\r
+      </web:LanguageName>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/LanguageNameRequest"/></con:call></con:operation><con:operation id="be50723e-67fa-4e14-a48c-6de4db87faa6" isOneWay="false" action="" name="ListOfContinentsByCode" bindingOperationName="ListOfContinentsByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f42927e3-dd00-4a43-a368-e091fa693c9b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfContinentsByCode/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfContinentsByCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d7a900f3-95d3-4351-9a4d-9669a2bf2acb" isOneWay="false" action="" name="ListOfContinentsByName" bindingOperationName="ListOfContinentsByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a4942f10-f233-433b-b0f8-c334fb879c8d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfContinentsByName/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfContinentsByNameRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="05dd81cf-ea24-4496-af90-82ef060b740a" isOneWay="false" action="" name="ListOfCountryNamesByCode" bindingOperationName="ListOfCountryNamesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="90cba4f2-82c9-4f5b-95ab-713208383d46" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCountryNamesByCode/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c9ffbd4c-3bbe-4c89-91fa-11ae8d313304" isOneWay="false" action="" name="ListOfCountryNamesByName" bindingOperationName="ListOfCountryNamesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fe6e7d03-33b6-46ac-8918-e330e8cf2ea8" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCountryNamesByName/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesByNameRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="10740343-7369-4e3f-bbcd-9aa316c22d7f" isOneWay="false" action="" name="ListOfCountryNamesGroupedByContinent" bindingOperationName="ListOfCountryNamesGroupedByContinent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eb09c9c3-e9c7-41f3-ab8f-4ac3027df424" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCountryNamesGroupedByContinent/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCountryNamesGroupedByContinentRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="552a208e-c266-443b-9293-3c4cdc6b58ec" isOneWay="false" action="" name="ListOfCurrenciesByCode" bindingOperationName="ListOfCurrenciesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34d97bc6-8ca4-469a-b88f-b9935db21dcc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCurrenciesByCode/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCurrenciesByCodeRequest"/></con:call></con:operation><con:operation id="ec50f47d-aede-4582-9903-3b77c6dba805" isOneWay="false" action="" name="ListOfCurrenciesByName" bindingOperationName="ListOfCurrenciesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a43e21c6-5964-45fd-a779-0cad5b0a0127" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCurrenciesByName/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfCurrenciesByNameRequest"/></con:call></con:operation><con:operation id="b9ba1c66-cc61-4f56-abf1-8e5ef2d3522d" isOneWay="false" action="" name="ListOfLanguagesByCode" bindingOperationName="ListOfLanguagesByCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="76d327b3-377e-4a21-8a24-b6ae73d51757" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfLanguagesByCode/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByCodeRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d87e03fa-bb7f-4f9a-9e0a-247acb04771a" isOneWay="false" action="" name="ListOfLanguagesByName" bindingOperationName="ListOfLanguagesByName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cec626c6-4f1b-461b-8333-4edbf7fec3f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfLanguagesByName/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="15d9d79c-1d91-4586-89e5-5b53efed2dd0" name="Countries"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="39905496-cf61-43f4-90d0-00166a83717b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Country Info" searchProperties="true"><con:description>Implementation of following site
+http://www.oorsprong.org
+http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL
+
+SOAPUI documentation:
+https://www.soapui.org/apidocs/index.html</con:description><con:settings/><con:testStep type="request" name="getContinents" id="8679dc38-5647-4494-93b6-11267ed73227"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>ListOfContinentsByCode</con:operation><con:request name="getContinents" id="e5743309-47be-41f5-9a95-dda11f1e4d72"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfContinentsByCode/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5ae7ae7f-1985-42d9-8338-9d9ace9f9361"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="prepareContinents" id="53be6c36-72e0-4d8c-938b-f15e914550cc"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
+import groovy.util.slurpersupport.GPathResult;
+import org.xml.sax.*;
+import com.eviware.soapui.support.types.*;
+import com.eviware.soapui.model.testsuite.*;
+
+int currentStepInd = context.currentStepIndex
+TestCase testcase = testRunner.testCase;
+TestStep listOfContinentsByCodeStep = testcase.getTestStepAt(currentStepInd - 1)
+
+String resultMessage = '';
+
+try{
+  String listOfContinentsByCodeResponseHdrCt = listOfContinentsByCodeStep.testRequest.getResponse().getContentType();
+
+  if (listOfContinentsByCodeResponseHdrCt.contains("xml")) {
+  	String listOfContinentsByCodeResponse = listOfContinentsByCodeStep.testRequest.getResponse().getContentAsXml();
+  	  
+     GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(listOfContinentsByCodeResponse);
+  	
+  	XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
+  	               .declareNamespace(soapenv: 'http://www.w3.org/2003/05/soap-envelope')
+  	               .declareNamespace(websamci: 'http://www.oorsprong.org/websamples.countryinfo');
+
+     List&lt;String> continentcodes = new ArrayList&lt;String>();
+     List&lt;String> continentvalues = new ArrayList&lt;String>();
+
+     XMLPResponseEnv.'soapenv:Body'.'websamci:ListOfContinentsByCodeResponse'.'websamci:ListOfContinentsByCodeResult'.'websamci:tContinent'.each{
+     	continentcodes.add(it."websamci:sCode".text());
+          continentvalues.add(it."websamci:sName".text());
+     }
+
+     // Ask the question
+     def selectedContinent = UISupport.prompt("Select continent", "Continent", continentvalues);
+
+     if (!selectedContinent?.trim()) {
+          resultMessage = "No continent selected";
+     } else {
+          // The answer
+          resultMessage = "${selectedContinent}: ${continentcodes.get(continentvalues.indexOf(selectedContinent))}";
+          testcase.setPropertyValue("SELECTEDCONTINENT",continentcodes.get(continentvalues.indexOf(selectedContinent)));
+     }
+  } else if (listOfContinentsByCodeResponseHdrCt.startsWith("EMPTY")) {
+  	resultMessage = "No response received!!";
+  } else {
+  	resultMessage = "Response is not an xml, unable to process.";
+  }
+} catch(SAXException SAXex){
+	resultMessage = "Unable to process response message: "+SAXex.getMessage();
+} catch(NullPointerException NPex) {
+	resultMessage = "No response found: "+NPex.getMessage();
+} catch(Exception ex) {
+    resultMessage = "Unable to process response message: "+ex.getMessage();
+} finally {
+	//UISupport.showInfoMessage(resultMessage);
+	log.info("Result message continent: ${resultMessage}");
+}
+
+return;</script></con:config></con:testStep><con:testStep type="request" name="getContinentCountries" id="9a5d51ee-515a-44d4-a1f6-6c173b8b43f5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>ListOfCountryNamesGroupedByContinent</con:operation><con:request name="getContinentCountries" id="f1cb69c2-68df-4783-9170-971675a7c95c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ListOfCountryNamesGroupedByContinent/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ef9a5f67-f276-4e97-947a-77be2bb3c750"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="prepareCountry" id="9a242788-d308-4fe0-8c6a-6abd1ab61151"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
+import groovy.util.slurpersupport.GPathResult;
+import org.xml.sax.*;
+import com.eviware.soapui.support.types.*;
+import com.eviware.soapui.model.testsuite.*;
+
+int currentStepInd = context.currentStepIndex;
+TestCase testcase = testRunner.testCase;
+TestStep listOfCountryByContinentStep = testcase.getTestStepAt(currentStepInd - 1);
+
+String resultMessage = '';
+
+try{
+  String listOfCountryByContinentResponseHdrCt = listOfCountryByContinentStep.testRequest.getResponse().getContentType();
+
+  if (listOfCountryByContinentResponseHdrCt.contains("xml")) {
+  	String listOfCountryByContinentStepResponse = listOfCountryByContinentStep.testRequest.getResponse().getContentAsXml();
+  	  
+     GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(listOfCountryByContinentStepResponse);
+  	
+  	XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
+  	               .declareNamespace(soapenv: 'http://www.w3.org/2003/05/soap-envelope')
+  	               .declareNamespace(websamci: 'http://www.oorsprong.org/websamples.countryinfo');
+
+     List&lt;String> countrycodes = new ArrayList&lt;String>();
+     List&lt;String> countryvalues = new ArrayList&lt;String>();
+
+     XMLPResponseEnv.'soapenv:Body'.'websamci:ListOfCountryNamesGroupedByContinentResponse'.'websamci:ListOfCountryNamesGroupedByContinentResult'.'websamci:tCountryCodeAndNameGroupedByContinent'.each{
+     	if (testcase.getPropertyValue("SELECTEDCONTINENT").equals(it.'websamci:Continent'.'websamci:sCode'.text())){
+     		GPathResult XMLContinentCountries = it.'websamci:CountryCodeAndNames';
+     		XMLContinentCountries.'websamci:tCountryCodeAndName'.each{
+     			countrycodes.add(it.'websamci:sISOCode'.text());
+     			countryvalues.add(it.'websamci:sName'.text());
+     		}
+     	};
+     };
+
+     // Ask the question
+     def selectedCountry = UISupport.prompt("Select country", "Country", countryvalues);
+
+     if (!selectedCountry?.trim()) {
+          resultMessage = "No country selected";
+     } else {
+          // The answer
+          resultMessage = "${selectedCountry}: ${countrycodes.get(countryvalues.indexOf(selectedCountry))}";
+          testcase.setPropertyValue("SELECTEDCOUNTRYISOCODE",countrycodes.get(countryvalues.indexOf(selectedCountry)));
+     };
+  } else if (listOfCountryByContinentResponseHdrCt.startsWith("EMPTY")) {
+  	resultMessage = "No response received!!";
+  } else {
+  	resultMessage = "Response is not an xml, unable to process.";
+  };
+} catch(SAXException SAXex){
+	resultMessage = "Unable to process response message: "+SAXex.getMessage();
+} catch(NullPointerException NPex) {
+	resultMessage = "No response found: "+NPex.getMessage();
+} catch(Exception ex) {
+    resultMessage = "Unable to process response message: "+ex.getMessage();
+} finally {
+	//UISupport.showInfoMessage(resultMessage);
+	log.info("Result message country: ${resultMessage}");
+}
+
+return;</script></con:config></con:testStep><con:testStep type="transfer" name="assignCountryInfoData" id="d72f2f6f-23e8-4a09-8835-7ea1998afc9a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>countryISOCode</con:name><con:sourceType>SELECTEDCOUNTRYISOCODE</con:sourceType><con:sourceStep>#TestCase#</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>getFullCountryInfo</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace websamci='http://www.oorsprong.org/websamples.countryinfo';
+
+/soap:Envelope/soap:Body/websamci:FullCountryInfo/websamci:sCountryISOCode</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="getFullCountryInfo" id="05ef0cbe-3ef8-431f-902b-199a8e99ba6c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>FullCountryInfo</con:operation><con:request name="getFullCountryInfo" id="faa38af5-127a-46ba-9046-02cd5c3f5222"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soap:Header/>
+   <soap:Body>
+      <web:FullCountryInfo>
+         <web:sCountryISOCode>BT</web:sCountryISOCode>
+      </web:FullCountryInfo>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="94d6ba5b-f1ec-4f6f-bda7-fdf9bf4c6025"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="showOutcome" id="7b674c5c-f57c-490e-96b2-f83ef4dc0b88"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.support.UISupport;
+import groovy.util.slurpersupport.GPathResult;
+import org.xml.sax.*;
+import com.eviware.soapui.support.types.*;
+import com.eviware.soapui.model.testsuite.*;
+import java.awt.Dimension;
+
+int currentStepInd = context.currentStepIndex;
+TestCase testcase = testRunner.testCase;
+TestStep getFullCountryInfoStep = testcase.getTestStepAt(currentStepInd - 1);
+
+String messageDescription = "Continent/Country Webservice information";
+String messageTitle = '';
+String messageText = '';
+
+String countryISOCode = '';
+String countryName = '';
+String countryCapitalCity = '';
+String countryPhoneCode = '';
+String countryContinentCode = '';
+String countryCurrencyCode = '';
+String countryFlag = '';
+String countryLanguages = '';
+Dimension screenDim = new Dimension();
+
+Boolean confirmOrCancelOutcome;
+String repeatTestCase = 'N';
+
+
+try{
+  String FullCountryInfoResponseHdrCt = getFullCountryInfoStep.testRequest.getResponse().getContentType();
+
+  screenDim.setSize(800,200);
+  if (FullCountryInfoResponseHdrCt.contains("xml")) {
+  	String FullCountryInfoResponse = getFullCountryInfoStep.testRequest.getResponse().getContentAsXml();
+  	  
+     GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(FullCountryInfoResponse);
+  	
+  	XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
+  	               .declareNamespace(soapenv: 'http://www.w3.org/2003/05/soap-envelope')
+  	               .declareNamespace(websamci: 'http://www.oorsprong.org/websamples.countryinfo');
+
+     countryISOCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sISOCode'.text();
+     countryName = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sName'.text();
+     countryCapitalCity = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCapitalCity'.text();
+     countryPhoneCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sPhoneCode'.text();
+     countryContinentCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sContinentCode'.text();
+     countryCurrencyCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCurrencyISOCode'.text();
+     countryFlag = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCountryFlag'.text();
+     countryLanguages = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:Languages'.text();
+
+     messageTitle = countryName;
+     messageText = "<html><body><div>Capital: ${countryCapitalCity}<br>Phone Area: ${countryPhoneCode}<br>Currency: ${countryCurrencyCode}<br><br><img src='${countryFlag}' alt='${countryISOCode}'/></div></body></html>";
+     screenDim.setSize(800,380);
+  } else if (listOfCountryByContinentResponseHdrCt.startsWith("EMPTY")) {
+  	messageText = "No response received!!";
+  } else {
+  	messageText = "Response is not an xml, unable to process.";
+  };
+} catch(SAXException SAXex){
+	messageText = "Unable to process response message: "+SAXex.getMessage();
+} catch(NullPointerException NPex) {
+	messageText = "No response found: "+NPex.getMessage();
+} catch(Exception ex) {
+    messageText = "Unable to process response message: "+ex.getMessage();
+} finally {
+	confirmOrCancelOutcome = UISupport.confirmExtendedInfo(messageTitle,messageDescription,messageText,screenDim);
+	if (confirmOrCancelOutcome){
+		repeatTestCase = 'Y';
+		log.info('Repeating the test case!');
+		testRunner.gotoStepByName("prepareContinents")
+	} else {
+		repeatTestCase = 'N';
+		log.info('Stopping the test csse.');
+	};
+	testcase.setPropertyValue("REPEATTESTCASE",repeatTestCase);
+}
+
+return;
+]]></script></con:config></con:testStep><con:setupScript>def scriptlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log");
+def soapUIlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("SoapUI log");
+def httplogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("http log");
+def testcase = testRunner.testCase;
+
+scriptlogArea.clear();
+soapUIlogArea.clear();
+httplogArea.clear();
+
+log.info("Running "+testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>SELECTEDCONTINENT</con:name><con:value>AS</con:value></con:property><con:property><con:name>SELECTEDCOUNTRYISOCODE</con:name><con:value>BT</con:value></con:property><con:property><con:name>REPEATTESTCASE</con:name><con:value>N</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
