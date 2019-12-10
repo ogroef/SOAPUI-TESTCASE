@@ -1,2 +1,2 @@
 # SOAPUI-TESTCASE
-These two repositories show how SOAPUI testcase can be used to test a webservice, along with groovy scripting/UI interaction.
+These two repositories show how SOAPUI "test case"/"load test" can be used to test a webservice(s), along with groovy scripting/UI interaction.
