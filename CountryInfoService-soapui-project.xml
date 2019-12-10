@@ -1230,17 +1230,21 @@
    <soap:Body>\r
       <web:ListOfLanguagesByName/>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="15d9d79c-1d91-4586-89e5-5b53efed2dd0" name="Countries"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="39905496-cf61-43f4-90d0-00166a83717b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Country Info" searchProperties="true"><con:description>Implementation of following site
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="15d9d79c-1d91-4586-89e5-5b53efed2dd0" name="Countries"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="39905496-cf61-43f4-90d0-00166a83717b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CountryInfoTestCase" searchProperties="true"><con:description>Implementation of following site
 http://www.oorsprong.org
 http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL
 
 SOAPUI documentation:
-https://www.soapui.org/apidocs/index.html</con:description><con:settings/><con:testStep type="request" name="getContinents" id="8679dc38-5647-4494-93b6-11267ed73227"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>ListOfContinentsByCode</con:operation><con:request name="getContinents" id="e5743309-47be-41f5-9a95-dda11f1e4d72"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+https://www.soapui.org/apidocs/index.html
+
+This test case will fetch all available continents and ask the user, via UI, which continent to process.
+After continent has been selected, the test case will fetch all countries for that continent.
+Via a UI a user can choose the continent/country to fetch data for.</con:description><con:settings/><con:testStep type="request" name="getContinents" id="8679dc38-5647-4494-93b6-11267ed73227"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>ListOfContinentsByCode</con:operation><con:request name="getContinents" id="e5743309-47be-41f5-9a95-dda11f1e4d72"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soap:Header/>\r
    <soap:Body>\r
       <web:ListOfContinentsByCode/>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5ae7ae7f-1985-42d9-8338-9d9ace9f9361"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="prepareContinents" id="53be6c36-72e0-4d8c-938b-f15e914550cc"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5ae7ae7f-1985-42d9-8338-9d9ace9f9361"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="chooseContinent" id="53be6c36-72e0-4d8c-938b-f15e914550cc"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
 import groovy.util.slurpersupport.GPathResult;
 import org.xml.sax.*;
 import com.eviware.soapui.support.types.*;
@@ -1248,7 +1252,8 @@ import com.eviware.soapui.model.testsuite.*;
 
 int currentStepInd = context.currentStepIndex
 TestCase testcase = testRunner.testCase;
-TestStep listOfContinentsByCodeStep = testcase.getTestStepAt(currentStepInd - 1)
+TestStep listOfContinentsByCodeStep = testcase.getTestStepAt(currentStepInd - 1);
+Random randomContinent = new Random();
 
 String resultMessage = '';
 
@@ -1267,18 +1272,30 @@ try{
      List&lt;String> continentcodes = new ArrayList&lt;String>();
      List&lt;String> continentvalues = new ArrayList&lt;String>();
 
+     // Get all continents
      XMLPResponseEnv.'soapenv:Body'.'websamci:ListOfContinentsByCodeResponse'.'websamci:ListOfContinentsByCodeResult'.'websamci:tContinent'.each{
      	continentcodes.add(it."websamci:sCode".text());
           continentvalues.add(it."websamci:sName".text());
      }
 
-     // Ask the question
-     def selectedContinent = UISupport.prompt("Select continent", "Continent", continentvalues);
+     def selectedContinent = "";
 
+     // The LoadTestRunner indicates if the testcase is run during a load test.
+     if (context.LoadTestRunner == null) {
+     	// Ask the question
+     	selectedContinent = UISupport.prompt("Select continent", "Continent", continentvalues);
+     } else {
+     	// Random get a continent value from the result
+     	selectedContinent = continentvalues.get(randomContinent.nextInt(continentvalues.size()));
+     }
+     
      if (!selectedContinent?.trim()) {
           resultMessage = "No continent selected";
+          testcase.setPropertyValue("SELECTEDCONTINENT","");
+          testcase.setPropertyValue("SELECTEDCOUNTRYISOCODE","");
+          testRunner.gotoStepByName("showOutcome")
      } else {
-          // The answer
+          // Store the answer in a test case property
           resultMessage = "${selectedContinent}: ${continentcodes.get(continentvalues.indexOf(selectedContinent))}";
           testcase.setPropertyValue("SELECTEDCONTINENT",continentcodes.get(continentvalues.indexOf(selectedContinent)));
      }
@@ -1303,7 +1320,7 @@ return;</script></con:config></con:testStep><con:testStep type="request" name="g
    <soap:Body>\r
       <web:ListOfCountryNamesGroupedByContinent/>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ef9a5f67-f276-4e97-947a-77be2bb3c750"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="prepareCountry" id="9a242788-d308-4fe0-8c6a-6abd1ab61151"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ef9a5f67-f276-4e97-947a-77be2bb3c750"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="chooseCountry" id="9a242788-d308-4fe0-8c6a-6abd1ab61151"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
 import groovy.util.slurpersupport.GPathResult;
 import org.xml.sax.*;
 import com.eviware.soapui.support.types.*;
@@ -1312,6 +1329,7 @@ import com.eviware.soapui.model.testsuite.*;
 int currentStepInd = context.currentStepIndex;
 TestCase testcase = testRunner.testCase;
 TestStep listOfCountryByContinentStep = testcase.getTestStepAt(currentStepInd - 1);
+Random randomCountry = new Random();
 
 String resultMessage = '';
 
@@ -1330,18 +1348,27 @@ try{
      List&lt;String> countrycodes = new ArrayList&lt;String>();
      List&lt;String> countryvalues = new ArrayList&lt;String>();
 
+     // Get all countries for the specified continent
      XMLPResponseEnv.'soapenv:Body'.'websamci:ListOfCountryNamesGroupedByContinentResponse'.'websamci:ListOfCountryNamesGroupedByContinentResult'.'websamci:tCountryCodeAndNameGroupedByContinent'.each{
      	if (testcase.getPropertyValue("SELECTEDCONTINENT").equals(it.'websamci:Continent'.'websamci:sCode'.text())){
      		GPathResult XMLContinentCountries = it.'websamci:CountryCodeAndNames';
      		XMLContinentCountries.'websamci:tCountryCodeAndName'.each{
      			countrycodes.add(it.'websamci:sISOCode'.text());
      			countryvalues.add(it.'websamci:sName'.text());
-     		}
+     		};
      	};
      };
 
-     // Ask the question
-     def selectedCountry = UISupport.prompt("Select country", "Country", countryvalues);
+     def selectedCountry;
+
+     // The LoadTestRunner indicates if the testcase is run during a load test.
+     if (context.LoadTestRunner == null) {
+     	// Ask the question
+     	selectedCountry = UISupport.prompt("Select country", "Country", countryvalues);
+     } else {
+     	// Randomly get a country value from the result
+     	selectedCountry = countryvalues.get(randomCountry.nextInt(countryvalues.size()));
+     };
 
      if (!selectedCountry?.trim()) {
           resultMessage = "No country selected";
@@ -1369,11 +1396,11 @@ try{
 return;</script></con:config></con:testStep><con:testStep type="transfer" name="assignCountryInfoData" id="d72f2f6f-23e8-4a09-8835-7ea1998afc9a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>countryISOCode</con:name><con:sourceType>SELECTEDCOUNTRYISOCODE</con:sourceType><con:sourceStep>#TestCase#</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>getFullCountryInfo</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
 declare namespace websamci='http://www.oorsprong.org/websamples.countryinfo';
 
-/soap:Envelope/soap:Body/websamci:FullCountryInfo/websamci:sCountryISOCode</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="getFullCountryInfo" id="05ef0cbe-3ef8-431f-902b-199a8e99ba6c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>FullCountryInfo</con:operation><con:request name="getFullCountryInfo" id="faa38af5-127a-46ba-9046-02cd5c3f5222"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+/soap:Envelope/soap:Body/websamci:FullCountryInfo/websamci:sCountryISOCode</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="getFullCountryInfo" id="05ef0cbe-3ef8-431f-902b-199a8e99ba6c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding12</con:interface><con:operation>FullCountryInfo</con:operation><con:request name="getFullCountryInfo" id="faa38af5-127a-46ba-9046-02cd5c3f5222"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
    <soap:Header/>
    <soap:Body>
       <web:FullCountryInfo>
-         <web:sCountryISOCode>BT</web:sCountryISOCode>
+         <web:sCountryISOCode>MD</web:sCountryISOCode>
       </web:FullCountryInfo>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="94d6ba5b-f1ec-4f6f-bda7-fdf9bf4c6025"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="showOutcome" id="7b674c5c-f57c-490e-96b2-f83ef4dc0b88"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.support.UISupport;
@@ -1391,6 +1418,8 @@ String messageDescription = "Continent/Country Webservice information";
 String messageTitle = '';
 String messageText = '';
 
+String FullCountryInfoResponseHdrCt = '';
+
 String countryISOCode = '';
 String countryName = '';
 String countryCapitalCity = '';
@@ -1405,35 +1434,44 @@ Boolean confirmOrCancelOutcome;
 String repeatTestCase = 'N';
 
 
-try{
-  String FullCountryInfoResponseHdrCt = getFullCountryInfoStep.testRequest.getResponse().getContentType();
-
+try {  
   screenDim.setSize(800,200);
-  if (FullCountryInfoResponseHdrCt.contains("xml")) {
-  	String FullCountryInfoResponse = getFullCountryInfoStep.testRequest.getResponse().getContentAsXml();
-  	  
-     GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(FullCountryInfoResponse);
+  if ( "".equals(testcase.getPropertyValue("SELECTEDCONTINENT")) || "".equals(testcase.getPropertyValue("SELECTEDCOUNTRYISOCODE")) ) {
+  	log.info('Nothing choosen!!');
+  	messageTitle = "Rerun";
+  	messageText = "No continent/country has been choosen. Do you want to rerun the test case?";
+  } else {
+  	FullCountryInfoResponseHdrCt = getFullCountryInfoStep.testRequest.getResponse().getContentType();
   	
-  	XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
+  	if (FullCountryInfoResponseHdrCt.contains("xml")) {
+  	   String FullCountryInfoResponse = getFullCountryInfoStep.testRequest.getResponse().getContentAsXml();
+  	  
+        GPathResult XMLPResponseEnv = new groovy.util.XmlSlurper().parseText(FullCountryInfoResponse);
+  	
+  	   XMLPResponseEnv.declareNamespace(soap: 'http://schemas.xmlsoap.org/wsdl/soap/')
   	               .declareNamespace(soapenv: 'http://www.w3.org/2003/05/soap-envelope')
   	               .declareNamespace(websamci: 'http://www.oorsprong.org/websamples.countryinfo');
 
-     countryISOCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sISOCode'.text();
-     countryName = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sName'.text();
-     countryCapitalCity = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCapitalCity'.text();
-     countryPhoneCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sPhoneCode'.text();
-     countryContinentCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sContinentCode'.text();
-     countryCurrencyCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCurrencyISOCode'.text();
-     countryFlag = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCountryFlag'.text();
-     countryLanguages = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:Languages'.text();
+        // Get Data out of the result
+        countryISOCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sISOCode'.text();
+        countryName = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sName'.text();
+        countryCapitalCity = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCapitalCity'.text();
+        countryPhoneCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sPhoneCode'.text();
+        countryContinentCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sContinentCode'.text();
+        countryCurrencyCode = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCurrencyISOCode'.text();
+        countryFlag = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:sCountryFlag'.text();
+        countryLanguage = XMLPResponseEnv.'soapenv:Body'.'websamci:FullCountryInfoResponse'.'websamci:FullCountryInfoResult'.'websamci:Languages'.'websamci:tLanguage'.'websamci:sName'.text();
 
-     messageTitle = countryName;
-     messageText = "<html><body><div>Capital: ${countryCapitalCity}<br>Phone Area: ${countryPhoneCode}<br>Currency: ${countryCurrencyCode}<br><br><img src='${countryFlag}' alt='${countryISOCode}'/></div></body></html>";
-     screenDim.setSize(800,380);
-  } else if (listOfCountryByContinentResponseHdrCt.startsWith("EMPTY")) {
-  	messageText = "No response received!!";
-  } else {
-  	messageText = "Response is not an xml, unable to process.";
+        // Building country outcome screen
+        messageTitle = countryContinentCode+" - "+countryName;
+        String liststyle = '"list-style-type:disc;"';
+        messageText = "<html><body><div><ul style=${liststyle}><li>Capital: ${countryCapitalCity}</li><li>Language: ${countryLanguage}</li><li>Phone Area: ${countryPhoneCode}</li><li>Currency: ${countryCurrencyCode}</li></ul><br><img src='${countryFlag}' width='200' height='90' alt='${countryISOCode}'/></div></body></html>";
+        screenDim.setSize(800,380);
+  	} else if (listOfCountryByContinentResponseHdrCt.startsWith("EMPTY")) {
+  	  messageText = "No response received!!";
+     } else {
+  	  messageText = "Response is not an xml, unable to process.";
+     }
   };
 } catch(SAXException SAXex){
 	messageText = "Unable to process response message: "+SAXex.getMessage();
@@ -1442,20 +1480,26 @@ try{
 } catch(Exception ex) {
     messageText = "Unable to process response message: "+ex.getMessage();
 } finally {
-	confirmOrCancelOutcome = UISupport.confirmExtendedInfo(messageTitle,messageDescription,messageText,screenDim);
-	if (confirmOrCancelOutcome){
-		repeatTestCase = 'Y';
-		log.info('Repeating the test case!');
-		testRunner.gotoStepByName("prepareContinents")
-	} else {
-		repeatTestCase = 'N';
-		log.info('Stopping the test csse.');
-	};
-	testcase.setPropertyValue("REPEATTESTCASE",repeatTestCase);
-}
+	// When running during a Load Test we don't repeat the testrunner
+	if (context.LoadTestRunner == null){
+		confirmOrCancelOutcome = UISupport.confirmExtendedInfo(messageTitle,messageDescription,messageText,screenDim);
+		
+		if (confirmOrCancelOutcome){
+			// Here the OK-Button has been pressed
+		     repeatTestCase = 'Y';
+		     log.info('Repeating the test case!');
+		     testRunner.gotoStepByName("prepareContinents");
+	     } else {
+		     // Here the CANCEL-Button has been pressed
+		     repeatTestCase = 'N';
+		     log.info('Stopping the test csse.');
+	     };
+	     testcase.setPropertyValue("REPEATTESTCASE",repeatTestCase);
+     };
+};
 
 return;
-]]></script></con:config></con:testStep><con:setupScript>def scriptlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log");
+]]></script></con:config></con:testStep><con:loadTest id="9fbbe828-7613-456c-9187-23d77fe9d195" name="CountryInfoLoadTest"><con:settings/><con:threadCount>1</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>5</con:testLimit><con:limitType>COUNT</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>1000</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:setupScript>def scriptlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("script log");
 def soapUIlogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("SoapUI log");
 def httplogArea = com.eviware.soapui.SoapUI.logMonitor.getLogArea("http log");
 def testcase = testRunner.testCase;
@@ -1464,4 +1508,8 @@ scriptlogArea.clear();
 soapUIlogArea.clear();
 httplogArea.clear();
 
-log.info("Running "+testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>SELECTEDCONTINENT</con:name><con:value>AS</con:value></con:property><con:property><con:name>SELECTEDCOUNTRYISOCODE</con:name><con:value>BT</con:value></con:property><con:property><con:name>REPEATTESTCASE</con:name><con:value>N</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+// Initialize the selection properties
+testcase.setPropertyValue("SELECTEDCONTINENT","");
+testcase.setPropertyValue("SELECTEDCOUNTRYISOCODE","");
+
+log.info("Running "+testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>SELECTEDCONTINENT</con:name><con:value>EU</con:value></con:property><con:property><con:name>SELECTEDCOUNTRYISOCODE</con:name><con:value>MD</con:value></con:property><con:property><con:name>REPEATTESTCASE</con:name><con:value>N</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

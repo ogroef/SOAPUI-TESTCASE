@@ -1323,6 +1323,10 @@
 https://www.ibanbic.be
 http://www.ibanbic.be/IBANBIC.asmx?WSDL
 
+IBAN examples
+http://criticaltester.com/test-data/iban-values-testing/
+https://www.tuxx.be/nl/betalingsverkeer/iban_voorbeelden/
+
 SOAPUI documentation:
 https://www.soapui.org/apidocs/index.html</con:description><con:settings/><con:testStep type="request" name="Get Info" id="35a8b286-1462-4656-a195-a930dc041b22"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>IBANBICSoap12</con:interface><con:operation>About</con:operation><con:request name="Get Info" id="4555eb2f-c47a-415b-8330-45a5f46c5f64"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.ibanbic.be/IBANBIC.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
    <soap:Header/>\r
@@ -1355,7 +1359,7 @@ String messageTitle = "About";
 
 UISupport.showExtendedInfo(messageTitle,messageDescription,messageText,new Dimension(800, 250));
 
-String ibanQuestion = "IBAN";
+String ibanQuestion = "IBAN (No space/dasches, all in one string)";
 String ibanTitle = "Belgian IBAN Converter";
 String ibanDefault = "";
 
@@ -1384,7 +1388,7 @@ declare namespace tmpuri='http://tempuri.org/';
    <soap:Header/>
    <soap:Body>
       <tem:controleIBAN>
-         <tem:iban></tem:iban>
+         <tem:iban>BE68844010370034</tem:iban>
       </tem:controleIBAN>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="55c4f346-386e-4262-8f4c-4c083fef9dbe"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Show Result" id="b1a483c8-e5ec-4c2a-9be8-136bf7e3b712"><con:settings/><con:config><script>import com.eviware.soapui.support.UISupport;
@@ -1443,4 +1447,4 @@ scriptlogArea.clear();
 soapUIlogArea.clear();
 httplogArea.clear();
 
-log.info(" Running "+ testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>IBANBICAboutValue</con:name><con:value/></con:property><con:property><con:name>IBANBICVersionValue</con:name><con:value/></con:property><con:property><con:name>IBANBICIbanNumber</con:name><con:value/></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+log.info(" Running "+ testcase.testSuite.project.name+" / "+testcase.name);</con:setupScript><con:properties><con:property><con:name>IBANBICAboutValue</con:name><con:value>XML Webservice to convert any Belgian Bank Account (BBAN) number to the new IBAN and BIC code. (c) 2018 MDSsoft bvba - Mathieu De Smet.</con:value></con:property><con:property><con:name>IBANBICVersionValue</con:name><con:value>1.3.3</con:value></con:property><con:property><con:name>IBANBICIbanNumber</con:name><con:value>BE68844010370034</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
